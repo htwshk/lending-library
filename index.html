@@ -6,6 +6,9 @@
 		<script type="text/javascript" src='js/jquery.js'></script>
 		<script type="text/javascript" src='js/site.js'></script>
 		<script type="text/javascript" src='js/tabletop1.3.4.js'></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <script type="text/javascript">
+      
 		<link rel="shortcut icon" href="https://raw.githubusercontent.com/jlord/lending-library/gh-pages/favico.png"/>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900' rel='stylesheet' type='text/css'>
 		<link media="screen" rel="stylesheet" type="text/css" href="css/site.css">
@@ -69,6 +72,7 @@
 			</div>
 		</div>
 		{{/rows}}
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/1zCQhLBLXmxp7lkBx0lkEwb-bd9BnV1bplKJoIxl0Q6s/pub?output=csv';
 
 function init() {
           Papa.parse('https://docs.google.com/spreadsheets/d/e/1zCQhLBLXmxp7lkBx0lkEwb-bd9BnV1bplKJoIxl0Q6s/pub?output=csv', {
